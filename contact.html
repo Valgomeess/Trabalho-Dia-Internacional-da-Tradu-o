@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia Internacional da Tradução - Contato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dia Internacional da Tradução</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1 class="title">Contato</h1>
+        <form>  <!--Dentro dele ficam os campos onde o usuário pode inserir informações-->
+            <label for="name">Nome:</label><br>  <!--Um rótulo (label) para o campo de texto. O for="name" liga o rótulo ao campo de entrada com id="name", indicando que eles estão relacionados.-->
+            <input type="text" id="name" name="name"><br><br>  <!--entrada onde o usuário pode digitar o nome.-->
+            <label for="email">E-mail:</label><br> 
+            <input type="email" id="email" name="email"><br><br>  <!-- campo aceita apenas um formato válido de e-mail-->
+            <label for="message">Mensagem:</label><br>   <!--campo de texto para mensagens mais longas.-->
+            <textarea id="message" name="message"></textarea><br><br>  
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Dia Internacional da Tradução</p>
+    </footer>
+</body>
+</html>

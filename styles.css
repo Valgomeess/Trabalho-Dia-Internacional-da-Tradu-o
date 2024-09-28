@@ -1,0 +1,118 @@
+/* estilo básico elementos da pagina  */
+* {
+    margin: 0;    /*Remove os espaçamentos padrões*/
+    padding: 0;    /*Remove os espaçamentos padrões*/
+    box-sizing: border-box; /*Define que o tamanho total de um elemento (larg e alt) inclui a borda e o preenchimento*/
+}
+
+/* Estilo geral corpo da pagina */
+body {
+    font-family: Arial, sans-serif;   /* define fonte para o texto */
+    background-color: #f4f4f4;  /*Define a cor de fundo do site como um cinza claro */
+    color: #333;    /* Define a cor do texto como um tom de cinza escuro */
+    line-height: 1.6;  /*espaçamento entre as linhas do texto*/
+}
+
+
+/* estilos aplicados ao cabeçalho */
+header {
+    background-color: #2c83a0;   /*Cor de fundo do cabeçalho (verde)*/
+    color: white;   /*Cor do texto (branco)*/
+    padding: 10px 0;  /*espaçamento interno de 10px em cima e embaixo*/
+    text-align: center;   /*Centraliza o conteúdo dentro do cabeçalho*/
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Estilos aplicados à lista de navegação*/
+nav ul {
+    list-style-type: none;  /*Remove os marcadores padrão da lista*/
+    padding: 0;   /*Remove o espaçamento interno padrão da lista*/
+}
+
+/*Estilos aplicados aos itens da lista*/
+nav ul li {
+    display: inline;   /*cada item da lista seja exibido em linha, ao invés de em blocos (um abaixo do outro).*/
+    margin: 0 15px;   /*espaçamento lateral de 15px entre os itens da lista*/
+}
+
+/*Estilos aplicados aos links da navegação*/
+nav ul li a {
+    color: white;   /*texto dos links seja branco*/
+    text-decoration: none;   /*Remove o sublinhado padrão dos links*/
+    font-weight: bold;  /*Deixa o texto em negrito*/
+    transition: 0.5s all;
+}
+
+nav ul li a:hover {
+  color: #e6e6e6;
+  border-bottom: 2px solid;
+  padding-bottom: 3px;
+  transition: 0.5s all;
+}
+
+/* Seção principal */
+section {
+    padding: 20px;  /*espaçamento interno de 20px*/
+    margin: 20px;  /*espaçamento externo de 20px*/
+    
+}
+
+section p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+section .title {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da página */
+    height: auto;    /* Mantém a proporção da imagem */
+}
+
+img.img-center {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da página */
+    height: auto;    /* Mantém a proporção da imagem */
+    border: 1px solid #2c83a0;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+input[type="text"], input[type="email"], textarea {
+    padding: 5px 5px;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+    min-width: 250px;
+}
+
+input[type="submit"] {
+    background: #2c83a0;
+    padding: 8px 16px;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid ;
+}
+
+/*Estilos aplicados ao rodapé*/
+/* Footer */
+footer {
+    background-color: #333;   /*Cor de fundo do rodapé (cinza escuro)*/
+    color: white;   /*texto do rodapé ficar branco*/
+    text-align: center;   /*Centraliza o texto*/
+    padding: 10px 0;   /*espaçamento interno de 10px em cima e embaixo*/
+    position: fixed;   /*Fixa o rodapé no fundo da página, mesmo quando rolar o site*/
+    bottom: 0;   /*o rodapé estará sempre na parte inferior da tela*/
+    width: 100%;   /*Faz o rodapé ocupar 100% da largura da página*/
+}
